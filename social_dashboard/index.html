@@ -17,7 +17,7 @@
    <body>
   <div class="container-fluid" id="wrapper">
   <header>
-<nav class="navbar navbar-default" id="header">
+<nav class="navbar navbar-default navbar-fixed-top" id="header">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -106,7 +106,7 @@
       <div class="row">
         <div class="hidden-xs col-md-3"><div id="menu">
         <ul class="nav nav-pills nav-stacked">
-  <li role="presentation" class="active"><a href="#">Isha Gaba</a></li>
+  <li role="presentation"><a href="#">Isha Gaba</a></li>
   <li role="presentation"><a href="#" style="color:black"><img src="glyphicons-530-list-alt.png" class="color"></span>News Feed<span class="glyphicon glyphicon-option-horizontal pull-right"></span></a></li>
   <li role="presentation"><a href="#"style="color:black"><img src="glyphicons-11-envelope.png" class="color">Messanger<span class="badge pull-right">5</span></a></li>  
 </ul>
@@ -130,15 +130,18 @@
 
 
         </div></div>
-        <div class="col-xs-12 col-sm-8 col-md-6">
+          <div class="col-xs-12 col-sm-8 col-md-6">
         <div id="main">
                 <div class="panel panel-default">
   <div class="panel-heading">
-  <h3 class="panel-title"><a href="#"><span class="glyphicon glyphicon-pencil">Create a Post | <span class="glyphicon glyphicon-camera"> Photo/Video album | <span class="color glyphicon glyphicon-facetime-video">LiveVideo</a></h3>
+  <h3 class="panel-title"><!--<span class="glyphicon glyphicon-pencil">--><a href="#">Create Post</a> | <!--<span class="glyphicon glyphicon-camera">--> <a href="#">Photo/Video</a> |<!-- <span class="color glyphicon glyphicon-facetime-video">--><a href="#"> Live Video </a></h3>
   </div>
   <div class="panel-body">
-   <div><h3 class="text-post"><img src="fb pic.jpg" class="color" style="width:10%"><input placeholder="Hi Isha. Tell Your Friends about Your Day." style="width:84%; margin-top: 15px;" class="pull-right"></div></h3></div>
-  <div class="panel-footer"><input placeholder="Feeling/Activity" style="width:20%;font-weight:bold; border-radius:12px;">     <input placeholder="Photo/Video" style="width:20%;font-weight:bold; border-radius:12px;"></div>
+   <div><h3 class="text-post"><img src="fb pic.jpg" class="color" style="width:15%"><input placeholder="Share an Update Isha." style="width:100%; margin-top: 10px; border:none;" class="pull-right"></div></h3></div>
+  <div class="panel-footer">
+  <button type="select">Feeling/Activity</button>
+  <button  type="select">Photo/Video</button>
+  </div>
 </div>
         <div class="panel panel-default">
   <div class="panel-heading">
@@ -210,21 +213,23 @@
         <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comment</span>
     </div>
   </div>
-  <div class="panel-footer">Write Comment Here...</div>
+  <div class="panel-footer"><input placeholder="Write a comment..." style="width:100%;margin-top: 15px;"></div>
 </div>
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title"><a href="#">Shivu Goyal</a></h3>
   </div>
-  <div class="panel-body">
-  <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src=""></iframe>
-</div>
+  <div class="panel-body video">
+  <video width="600px" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+  <!--Your browser does not support HTML5 video.-->
+</video>
     <div> <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like</span>
         <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comment</span>
     </div>
   </div>
-  <div class="panel-footer">Write Comment Here...</div>
+  <div class="panel-footer"><input placeholder="Write a comment..." style="width:100%;margin-top: 15px;"></div>
 </div>
 </div></div>
 
@@ -242,32 +247,31 @@
         <div role="tabpanel" class="tab-pane" id="Sport">3</div>
     </div>
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"></a>
     <div class="d-flex w-100 justify-content-between">
-      <h6 class="mb-11">Treanding</h6>
-      <small><img src="glyphicons-330-soccer-ball.png" class="color" style="width:10%"></small>
+      <h5 class="mb-11" style="font-weight:Bold;">Treanding<img src="glyphicons-9-film.png" class="color pull-right" style="width:7%"><img src="glyphicons-330-soccer-ball.png" class="color pull-right" style="width:7%"><img src="glyphicons-21-home.png" class="color pull-right" style="width:7%"><img src="glyphicons-206-electricity.png" class="color pull-right" style="width:3%"></h5>
+      <small></small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small>Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-</div>    <!--<div id="main">-->
+    <p class="mb-1"><li><a href="#">Jay Parkash Airport</a></li></p>
+    <small>Indigo aircraft engine fail</small>
+<p class="mb-1"><li><a href="#">R.Madhvan</a></li></p>
+    <small>Shares a shower selfie</small>
 
+
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"></a>
+    <div class="d-flex w-100 justify-content-between">
+   <h5 class="mb-11" style="font-weight:Bold;">Suggested Pages<a class="pull-right" href="#">See More</a></h5>
+      <small class="text-muted"><img src="https://scontent.fjai1-1.fna.fbcdn.net/v/t1.0-9/18920687_132345177339658_5329384354003249554_n.jpg?oh=5a279bee07a8e8492758799b1a1ff590&oe=5A09484A" style="width:100%"></small>
+    </div>
+    <p class="mb-11"><a href="#">Virat Kohli</a></p>
+    <small class="text-muted"><button type="button" class="btn btn-default">
+          <div> <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like Page</span>
+          </button>
+
+</small>
+
+      <!--<div id="main">-->
+</div>
    <!-- <div>
         <img src="https://pbs.twimg.com/profile_images/1146014416/mark-zuckerberg.jpg" style="float: left";>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sint ipsa magnam, fugit eum, illo repellat quae facere laborum accusantium neque hic minima, qui animi quo nesciunt! Doloribus, quis, et.</p>
